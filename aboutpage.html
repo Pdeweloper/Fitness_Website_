@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
+
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        
+        
+        
+        <!-- google font cdn -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        
+        
+        <!-- CSS file -->
+        <link rel="stylesheet" href="CSS/aboutpage.css">
+        
+        <!-- following is jquery cdn  -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/fontawesome.min.js"></script>
+        
+        <title>About us</title>
+        
+        
+    </head>
+    <body>
+        
+        <header>
+            <div class="nav-container">
+                <nav >
+                    <ul id="navlist">
+                        <li>
+                            
+                            
+                            <p id="navlogo"><span>F</span>itPro</p>
+                        </li>
+                        <li>
+                            <div id="anchor">
+                                <a href="./homepage1.html">Home</a>
+                                <a href="./aboutpage.html">About</a>
+                                <a href="">Programs</a>
+                                <a href="./blogpage1.html">Blogs</a>
+                            </div>
+                        </li>
+                        <div id="div1">
+                        <i class="material-icons" style="font-size:40px; color:#fff">menu</i>
+                    </div>
+                    <div id="div2" style="display:none;">
+                        <a href="./homepage1.html">Home</a>
+                        <a href="./aboutpage.html">About</a>
+                        <a href="">Programs</a>
+                        <a href="./blogpage1.html">Blogs</a>
+                        <a href="./apointmentpage.html">Contact Us</a>
+                    </div>
+                    <a href="./apointmentpage.html" target="_blank"><button id="button">contact us </a></button>
+                    
+                </ul>
+                
+            </nav>
+            
+        </header>
+        <div class="container">
+            <div class="left_block">
+                <p></p>
+                <img src="https://watermark.lovepik.com/photo/20211123/large/lovepik-gym-picture_500868937.jpg"
+                alt="gym image" />
+            </div>
+            <div class="right">
+                <div class="title">
+                    <!-- <img src="./strength.png" alt=""> -->
+                    <font-awesome-icon icon="fa-solid fa-dumbbell" />
+                    <h3>ABOUT FITPRO</h3>
+                </div>
+                <h2>ADJUST YOUR BODY AND GET PERFECT BALANCE</h2>
+                <p>Our <span> Mission </span> is to provide a welcoming and inclusive environment where members can achieve
+                    their fitness goals through state-of-the-art facilities, innovative programming, and expert guidance. We
+                    are dedicated to promoting <span>Physical, Mental, and Social</span> well-being by fostering a community
+                    that
+                    supports and motivates one another.</p>
+                    
+                    <p>At <span>FitPro</span>, we believe that fitness is not just a routine but a lifestyle that enhances every
+                        aspect of your well-being. Our mission is to empower you to reach your fitness goals by providing an
+                        environment that is <span>Welcoming, Motivating, and Equipped</span> with the best resources available.
+                    </p>
+                    
+                    <a href=""> <button class="btn" id="b2">Learn More</button> </a>
+                </div>
+            </div>
+            
+            
+            
+            <link rel="stylesheet" href="aboutpage.js">
+            <script>
+                $(document).ready(function(){
+                    $("#div1").click(function(){
+                        $("#div2").toggle();
+                    });
+                });
+                </script>
+</body>
+
+</html>

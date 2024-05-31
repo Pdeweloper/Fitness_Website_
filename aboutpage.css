@@ -1,0 +1,258 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.nav-container {
+    height: 35%;
+    width: 120%;
+    /* background-color:#000; */
+
+}
+
+#navlist {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#navlogo {
+    list-style: none;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    margin-left: 150px;
+    margin-top: 12px;
+}
+
+#navlogo>span {
+    color: rgb(182 255 11);
+}
+
+#anchor {
+    display: flex;
+    gap: 45px;
+    padding: 20px;
+    margin: 0 0 0 55%;
+
+}
+
+#anchor a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+#anchor a:hover {
+    font-size: 1.6rem;
+}
+
+#button {
+    /* margin-right: 7%;
+margin-top: 1%; */
+    margin: 1% 20% 1% 0%;
+    height: 45px;
+    width: 7%;
+    background-color: rgb(6, 6, 6);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+#button:hover {
+    background-color: #525252;
+}
+
+#button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+#div1 i{
+    display: none;
+}
+
+/* .container start from here ---------------------------------------------------  */
+.container {
+    display: flex;
+
+}
+
+.left_block {
+    height: 100vh;
+    width: 50vw;
+    margin: 0 0 0 -7rem;
+    /* background-color: rgba(255, 255, 255, 0.096); */
+    /* background: rgba(255, 255, 255, 0.096); */
+
+}
+
+.left_block img {
+    background-color: white;
+    position: relative;
+    /* top: 3%; */
+    left: 2rem;
+    width: 38vw;
+    height: 75vh;
+    filter: brightness(0.8);
+}
+
+.container .right {
+    height: 100vh;
+    width: 70vw;
+    margin: 0 -5rem 0 8rem;
+    color: white;
+    /* background-color: red; */
+}
+
+.right p span {
+    color: rgb(182 255 11);
+}
+
+.right h3 {
+    color: rgb(182 255 11);
+    padding: 1rem;
+}
+
+.right .title {
+    display: flex;
+}
+
+.right .title img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.right h2 {
+    width: 35vw;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 800;
+    padding-bottom: 1rem;
+    font-style: normal;
+}
+
+.right p {
+    columns: 200px 1;
+    column-gap: 30px;
+    padding: 10px;
+}
+
+.right a button {
+    border: 3px solid rgb(182 255 11);
+    color: rgb(182 255 11);
+    background-color: transparent;
+    height: 50px;
+    width: 20%;
+    font-size: 1rem;
+
+}
+
+.right a button:hover {
+    background-color: rgb(182 255 11);
+    color: #000;
+}
+
+
+@media(min-width:360px) and (max-width:850px)
+{
+  
+    nav{
+        display: flex;
+        margin-bottom: -2rem;
+    }
+    #navlogo{
+        font-size: 1.8rem;
+        margin-left: -19px;
+    }
+    #anchor{
+        margin-left: 5%;
+    }
+    #anchor a{
+        display: none;
+    }
+    #button{
+        display: none;
+    }
+    
+#div1 i{
+    display: flex;
+    display: flex;
+    position: absolute;
+    left: 20rem;
+    top: 1rem;
+}
+#div2{
+    margin-top: 1rem;
+}
+#div2 a{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    position: relative;
+    right: -6rem;
+    top: -0.6rem;
+    margin-top: 1rem;
+}
+    .container{
+        display: block;
+    }
+    .left_block{
+        height: 44vh;
+        margin: 0 0 -4rem -7rem;
+    }
+    .left_block img {
+       height: 18rem;
+       width: 29rem;
+        filter: brightness(0.8);
+    }
+    
+.container .right {
+    margin:0 1rem;
+    color: white;
+}
+
+.right .title img{
+    display: none;
+}
+.right h3 {
+    color: rgb(182 255 11);
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+.right h2{
+    width: 20rem;
+    /* margin-left: -1.2rem; */
+    font-size: 1.5rem;
+}
+.right p {
+    columns: 20px 1;
+    width: 20rem;
+    column-gap: 3px;
+    padding: 1px;
+    font-size: 0.8rem;
+}
+.right a button {
+    border: 3px solid rgb(182 255 11);
+    color: rgb(182 255 11);
+    background-color: transparent;
+    height: 50px;
+    width: 50%;
+    font-size: 1rem;
+}
+#navlist {
+font-size: 0.2rem;
+
+}
+}

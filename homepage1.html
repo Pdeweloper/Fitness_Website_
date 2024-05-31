@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Following link is for slick-slider (cdn) -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+    
+    <!-- google fond cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    
+    <!-- icon cdn  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <!-- jQuery cdn  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- css file  -->
+    <link rel="stylesheet" href="CSS/homepage1.css">
+
+    <title>homepage</title>
+</head>
+<body>
+    <!-- header section -->
+    <div class="container">
+        <header>
+          <div class="nav-container">
+            <nav>
+              <ul id="navlist"> 
+                <li>
+                  
+                
+                  <p id="navlogo"><span>F</span>itPro</p>
+                </li>
+                <li>
+                  <div id="anchor">
+                    <a href="./homepage1.html">Home</a>
+                    <a href="./aboutpage.html">About</a>
+                    <a href="">Programs</a>
+                    <a href="./blogpage1.html">Blogs</a>
+                  </div>
+                </li>
+
+                <div id="div1">
+                  <i class="material-icons" style="font-size:40px; color:#fff">menu</i>
+              </div>
+              <div id="div2" style="display:none;">
+                      <a href="./homepage1.html">Home</a>
+                      <a href="./aboutpage.html">About</a>
+                      <a href="">Programs</a>
+                      <a href="./blogpage1.html">Blogs</a>
+                      <a href="./apointmentpage.html">Contact Us</a>
+              </div>
+                <a href="./apointmentpage.html" target="_blank"><button id="button">contact us </a></button>
+      
+              </ul>
+            </nav>
+          </header>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dGhlJTIwZ3ltfGVufDB8fDB8fHww" style="width:100%">
+  <div class="text">
+    <h2>Modern Equipment</h2>
+    <p> Our gym is equipped with the latest machines and free weights to ensure you have everything you need for a comprehensive workout.</p>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://img.freepik.com/premium-photo/gym-equipments-fitness-club_23-2147949744.jpg" style="width:100%">
+  <div class="text"> <h2>Personal Training</h2>
+    <p> Our experienced personal trainers are dedicated to creating customized fitness plans tailored to your goals and fitness level.</p></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://images.squarespace-cdn.com/content/v1/5fdfeb249d00c472c28c8e82/1683943561139-VUVML1G2TTEDWMVSDE6E/DSC05170.jpg" style="width:100%">
+  <div class="text"> <h2>Wellness Services</h2>
+    <p>Enjoy additional amenities such as sauna, massage therapy, and nutrition counseling to support your overall health and well-being.</p></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+</body>
+</html> 
+
+          </div>
+      
+      
+          <!-- main section -->
+          <main>
+            <div class="main">
+              <h2 id="h2">Customized</h2>
+            <div class="article">
+              <p class="p1">Workout with a Personal Trainer</p>
+            </div>
+             <div class="button">
+              <a href="#"><button class="btn" id="b1">Get Started</button></a>
+              <a href="./aboutpage.html"><button class="btn" id="b2">Learn More</button></a>
+          </div>
+        </div>
+     
+      </main>
+      
+      
+          <!-- Footer section -->
+      
+          <footer>
+      
+            <div class="footer">
+             
+              
+                <div id="footer-content">
+  
+                  <h2>40% OFF ON WEEKEND</h2>
+                  <h2>40% OFF ON WEEKEND</h2>
+                  <h2>40% OFF ON WEEKEND</h2>
+                  <h2>40% OFF ON WEEKEND</h2>
+                  <h2>40% OFF ON WEEKEND</h2>
+                  <h2>40% OFF ON WEEKEND</h2>
+                  <h2>40% OFF ON WEEKEND</h2>
+                </div>
+             
+      
+            </div>
+          </footer>
+        </div>
+      
+        <!-- following cdn is for jQuery and slink-slider -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+
+   <script>
+
+// following is media function 
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    $('#footer-content').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  prevArrow: false,
+    nextArrow: false,
+  autoplay: true,
+  autoplaySpeed: 0,
+  speed: 2000,  
+  pauseOnHover: false,
+  cssEase: 'linear'
+});
+
+//---------------------------  slider JS code --------------------------//
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+
+  } else {
+    $('#footer-content').slick({
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  prevArrow: false,
+    nextArrow: false,
+  autoplay: true,
+  autoplaySpeed: 0,
+  speed: 2000,  
+  pauseOnHover: false,
+  cssEase: 'linear'
+});
+  }
+}
+
+// Create a MediaQueryList object
+var x = window.matchMedia("(max-width: 850px)")
+
+// Call listener function at run time
+myFunction(x);
+
+// Attach listener function on state changes
+x.addEventListener("change", function() {
+  myFunction(x);
+});
+
+
+// following  code is for toogle the menu logo 
+    $(document).ready(function(){
+        $("#div1").click(function(){
+          $("#div2").toggle();
+        });
+      });
+
+ 
+
+    </script>
+    
+    
+</body>
+</html>

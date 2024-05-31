@@ -1,0 +1,291 @@
+* {
+  margin: 0px;
+  padding: 0x;
+  box-sizing: border-box;
+}
+body {
+  /* background-image: url(./black\ img.jpg); */
+  background: black;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.nav-container {
+  height: 35%;
+  width: 120%;
+  background-color: #2b2b2b;
+}
+
+#navlist {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#navlogo {
+  list-style: none;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  margin-left: 150px;
+  margin-top: 12px;
+}
+
+#navlogo > span {
+  color: rgb(182 255 11);
+}
+
+#anchor {
+  display: flex;
+  gap: 45px;
+  padding: 20px;
+  margin: 0.5rem 0 0 55%;
+}
+
+#anchor a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+#anchor a:hover {
+  font-size: 1.6rem;
+}
+
+#button {
+  /* margin-right: 7%;
+margin-top: 1%; */
+  margin: 1.5% 20% 1% 0%;
+  height: 45px;
+  width: 7%;
+  background-color: rgb(6, 6, 6);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+#button:hover {
+  background-color: #525252;
+}
+
+#button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+#div1 i {
+  display: none;
+}
+#div2 a {
+  display: none;
+}
+
+/* container start from here ------------------------------------------  */
+.contain {
+  text-align: center;
+  color: #fff;
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.card-section--1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  justify-content: center;
+  margin-left: 3rem;
+  text-align: center;
+}
+.card-section--2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  justify-content: center;
+  margin-left: 3rem;
+  text-align: center;
+}
+
+.card-1 {
+  border: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  color: #fff;
+  background-color: #0000;
+}
+.card-2 {
+  border: none;
+  border-radius: 0px;
+  color: #fff;
+  background-color: #0000;
+}
+.card-3 {
+  border: none;
+  border-radius: 0px;
+  color: #fff;
+  background-color: #0000;
+}
+.card-4 {
+  border: none;
+  border-radius: 0px;
+  color: #fff;
+  background-color: #0000;
+}
+
+.span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #fff;
+  margin: 0rem 10rem;
+}
+
+.s1 {
+  padding: 1rem 3rem;
+  background-color: rgb(41, 36, 36);
+  margin-left: 2rem;
+  text-align: center;
+  color: #fff;
+}
+.s2 {
+  padding: 1rem 3rem;
+  background-color: rgb(41, 36, 36);
+  margin-left: 2rem;
+  text-align: center;
+  color: #fff;
+}
+.s3 {
+  padding: 1rem 3rem;
+  background-color: rgb(41, 36, 36);
+  margin-left: 2rem;
+  text-align: center;
+  color: #fff;
+}
+#button-SFT {
+  padding: 1rem 1rem;
+  margin-left: 47%;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+
+  color: rgb(136, 255, 0);
+  border: 1px solid rgb(136, 255, 0);
+  background-color: #0000;
+}
+
+#button-SFT:hover {
+  background-color: rgb(182 255 11);
+  color: #000;
+}
+
+.card-body {
+  text-align: start;
+  padding-left: 4rem;
+  padding-top: 0px;
+
+  & button {
+    background-color: #0000;
+    color: rgb(136, 255, 0);
+  }
+}
+.img-fluid-1{
+  height: 14rem;
+  width: 14rem;
+}
+.img-fluid-2{
+  height: 14rem;
+  width: 14rem;
+}
+.img-fluid-3{
+  height: 14rem;
+  width: 14rem;
+}
+.img-fluid-4{
+  height: 14rem;
+  width: 14rem;
+}
+@media (min-width: 360px) and (max-width: 850px) {
+  .nav-container {
+    height: 30%;
+  }
+  nav {
+    display: flex;
+    margin-bottom: -1rem;
+  }
+  #navlogo {
+    font-size: 1.8rem;
+    margin-left: -19px;
+  }
+  #anchor {
+    margin-left: 5%;
+  }
+  #anchor a {
+    display: none;
+  }
+  #button {
+    display: none;
+  }
+
+  #div1 i {
+    display: flex;
+    margin: 1rem 0rem 0 12rem;
+  }
+  #div2 {
+    margin-top: 1rem;
+  }
+  #div2 a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    position: relative;
+    right: 7rem;
+    top: -0.4rem;
+    margin-top: 1rem;
+  }
+  .contain {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .img-fluid-1 {
+    height: 7rem;
+  }
+  .img-fluid-2 {
+    height: 7rem;
+  }
+  .img-fluid-3 {
+    height: 7rem;
+  }
+  .img-fluid-4 {
+    height: 7rem;
+  }
+  .card-section--1 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .card-section--2 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5rem;
+    margin-left: 3rem;
+    
+  }
+  .s1{
+    margin-bottom: 2rem;
+  }
+  
+  .s2{
+    margin-bottom: 2rem;
+  }
+  
+}

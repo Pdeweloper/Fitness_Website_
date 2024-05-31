@@ -1,0 +1,320 @@
+body {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+
+.nav-container {
+  height: 35%;
+  width: 120%;
+  /* background-color:#000; */
+
+}
+
+#navlist {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#navlogo {
+  list-style: none;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  margin-left: 150px;
+  margin-top: 12px;
+}
+
+#navlogo>span {
+  color: rgb(182 255 11);
+}
+
+#anchor {
+  display: flex;
+  gap: 45px;
+  padding: 20px;
+  margin: 0 0 0 55%;
+
+}
+
+#anchor a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+#anchor a:hover {
+  font-size: 1.6rem;
+}
+
+#button {
+  /* margin-right: 7%;
+margin-top: 1%; */
+  margin: 1% 20% 1% 0%;
+  height: 45px;
+  width: 7%;
+  background-color: rgb(6, 6, 6);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+#button:hover {
+  background-color: #525252;
+}
+
+#button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+#div1 i{
+  display: none;
+}
+
+
+/* container style start from here -------------------------------------------  */
+.container {
+  display: flex;
+  margin-top: -2rem;
+}
+.left_block {
+  height: 36.5rem;
+  width: 30%;
+  /* backdrop-filter: blur(15px);  */
+  background: rgba(255, 255, 255, 0.096);
+  margin: -25px 0 0 -20px;
+}
+.left_block .slogan {
+  color: white;
+  width: 35rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  position: relative;
+  top: 14px;
+  left: 16rem;
+}
+.left_block img {
+  background-color: white;
+  position: relative;
+  top: 2.5rem;
+  left: 8rem;
+  width: 36vw;
+  height: 72vh;
+  filter: brightness(0.7);
+}
+
+.right_block {
+  color: white;
+}
+
+.right_block {
+  position: relative;
+  top: 1rem;
+  left: 28rem;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 69vh;
+  text-align: center;
+  /* background-color: #2b2323; */
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.055);
+}
+.right_block input {
+  height: 3rem;
+  width: 22rem;
+  margin: 1rem 0 1rem 0;
+  border: 1px solid white;
+  display: block;
+  background-color: transparent;
+  color: white;
+  font-size: large;
+}
+.right_block textarea {
+  margin: 1rem 0 1rem 0;
+  margin-top: -1px;
+  background-color: transparent;
+  border: 1px solid white;
+  /* font-size: 1rem; */
+  color: white;
+}
+.right_block .date {
+  width: 21.2rem;
+}
+
+input[type="text"]::placeholder {
+  font-weight: 5rem;
+  font-size: large;
+  padding: 1rem;
+}
+input[type="email"]::placeholder {
+  padding: 1rem;
+  font-size: large;
+}
+input[type="date"] {
+  padding: 0.5rem;
+  font-size: large;
+}
+
+/* to show white calender in box */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 2px;
+  /* opacity: 0.6; */
+  filter: invert(0.8);
+}
+::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+  padding: 1rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+textarea::placeholder {
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.button{
+  position: absolute;
+  left: 65%;
+  top: 100%;
+}
+.button button {
+  margin-left: 3rem ;
+  /* margin: 1.2rem; */
+  padding: 11px;
+  background: rgb(179, 255, 0);
+  /* border: 2px solid white; */
+  font-size: 1.2rem;
+  /* border-radius: 6px; */
+}
+.button a {
+  text-decoration: none;
+  color: black;
+}
+.button2 button {
+  position: relative;
+  right: 100px;
+  border-radius: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  
+nav{
+    display: flex;
+    margin-bottom: -2rem;
+}
+#navlogo{
+    font-size: 1.8rem;
+    margin-left: -19px;
+}
+#anchor{
+    margin-left: 5%;
+}
+#anchor a{
+    display: none;
+}
+#button{
+    display: none;
+}
+
+#div1 i{
+display: flex;
+position: absolute;
+left: 20rem;
+top: 2rem;
+}
+#div2{
+margin-top: 1rem;
+}
+#div2 a{
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  position: relative;
+  right: -6rem;
+  top: -1.1rem;
+  margin-top: 1rem;
+}
+
+/* container css ------------------------------------------------  */
+.container{
+  display: block;
+}
+.left_block{
+  display: none;
+  width: 70%;
+  height: 33.3rem;
+  
+}
+.left_block .slogan{
+  left: 65px;
+  width: 100%;
+  font-size: 12px;
+  margin: auto;
+  top: 24px;
+  display: block;
+}
+.left_block img {
+  left: 5rem;
+  width: 100%;
+  height: 23.3rem;
+    top: 1.8rem;
+   
+  }
+  .right_block{
+    left: 0px;
+    top: 2rem;
+    height: 50vh;
+    width: 87vw;
+    filter: blur(0px);
+  }
+  /* #date{
+    width: 90vw;
+  } */
+  /* #message{
+    width: 91vw;
+  } */
+  input[type="date"] {
+    padding: 0rem 0px 0px 0.5rem;
+    font-size: large;
+  }
+  .right_block input {
+    height: 3rem;
+    width: 100%;
+  }
+  /* body{
+    overflow-y: auto;
+  } */
+  
+.button{
+  display: flex;
+  gap:2rem;
+  position: relative;
+  left: 0rem;
+  top: -2rem;
+}
+.button button {
+  margin: 5rem -74px 0 5rem;
+  /* padding: 9px;  */
+  background: rgb(179, 255, 0);
+  font-size: 1.2rem;
+  
+}
+}

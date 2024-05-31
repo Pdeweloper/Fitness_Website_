@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- following is CSS file  -->
+    <link rel="stylesheet" href="CSS/apointmentpage.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- google font family cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- foolowing is JS file  -->
+    <script src="apointmentpage.js"></script>
+
+    <!-- following is jQuery cdn   -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <!-- following is emailjs server  -->
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "2ZrsTm5-6XJJrj6nS",
+        });
+      })();
+    </script>
+
+    <title>Login Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+          <nav >
+              <ul id="navlist">
+                  <li>
+                      
+                      
+                      <p id="navlogo"><span>F</span>itPro</p>
+                  </li>
+                  <li>
+                      <div id="anchor">
+                          <a href="./homepage1.html">Home</a>
+                          <a href="./aboutpage.html">About</a>
+                          <a href="">Programs</a>
+                          <a href="./blogpage1.html">Blogs</a>
+                      </div>
+                  </li>
+                  <div id="div1">
+                  <i class="material-icons" style="font-size:40px; color:#fff">menu</i>
+              </div>
+              <div id="div2" style="display:none;">
+                  <a href="./homepage1.html">Home</a>
+                  <a href="./aboutpage.html">About</a>
+                  <a href="">Programs</a>
+                  <a href="./blogpage1.html">Blogs</a>
+                  <a href="./apointmentpage.html">Contact Us</a>
+              </div>
+              <a href="./apointmentpage.html" target="_blank"><button id="button">contact us </a></button>
+              
+          </ul>
+          
+      </nav>
+      
+  </header>
+
+    <div class="container">
+      <div class="left_block">
+        <p></p>
+        
+        <img
+          src="https://e0.pxfuel.com/wallpapers/1018/998/desktop-wallpaper-gym-background-beautiful-high-resolution-empty-gym.jpg"
+          alt="gym image"
+        />
+        <div class="slogan" style="display: none;">
+          <h1>Our Mission Is To Make Your Wellness Goals Our Top Priority</h1>
+        </div>
+      </div>
+
+      <div class="right_block">
+        <h2>Make Appointment</h2>
+        <input id="name" type="text" placeholder="Full Name" />
+        <input id="email" type="email" placeholder="Your Email" />
+        <input id="date" type="date" placeholder="Date" />
+        <input id="number" type="number" placeholder="Mob. No." />
+        <textarea
+          name="message"
+          id="message"
+          cols="46"
+          rows="5"
+          placeholder="Message"
+        ></textarea>
+      </div>
+   </div>
+    <div class="button">
+      <button onclick="sendmail()">SUBMIT</button>
+      <button><a href="#">RESET</a></button>
+    </div>
+
+    <script>
+      $(document).ready(function(){
+          $("#div1").click(function(){
+              $("#div2").toggle();
+          });
+      });
+      </script>
+  </body>
+</html>

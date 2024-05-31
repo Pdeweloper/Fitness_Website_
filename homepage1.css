@@ -1,0 +1,347 @@
+body {
+  background-image: url(https://images7.alphacoders.com/130/1300550.jpg);
+  background-repeat: none;
+  background-size: cover;
+  backdrop-filter: brightness(0.5);
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  background-image: url(./img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+.nav-container {
+  height: 35%;
+  width: 120%;
+  /* background-color:#000; */
+
+}
+
+#navlist {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#navlogo {
+  list-style: none;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  margin-left: 150px;
+  margin-top: 12px;
+}
+
+#navlogo>span {
+  color: rgb(182 255 11);
+}
+
+#anchor {
+  display: flex;
+  gap: 45px;
+  padding: 20px;
+  margin: 0 0 0 62%;
+
+}
+
+#anchor a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+#anchor a:hover {
+  font-size: 1.6rem;
+}
+
+#button {
+  /* margin-right: 7%;
+    margin-top: 1%; */
+  margin: 1% 20% 1% 0%;
+  height: 45px;
+  width: 7%;
+  background-color: rgb(6, 6, 6);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+#div1 i{
+  display: none;
+}
+
+#button:hover {
+  background-color: #525252;
+}
+
+#button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+/* main section */
+#h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: rgb(182 255 11);
+  margin: 10px;
+
+}
+
+.main {
+  margin: 10% 0% 0% 6%;
+
+}
+
+
+a #b1 {
+  margin-top: 10px;
+  height: 50px;
+  width: 12%;
+  background-color: rgb(182 255 11);
+  border: none;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000;
+}
+
+a #b2 {
+  border: 3px solid rgb(182 255 11);
+  background-color: transparent;
+  height: 50px;
+  width: 12%;
+  font-size: 1rem;
+  margin: 1% 4%;
+  text-decoration: none;
+  color: rgb(182 255 11);
+}
+
+a #b2:hover {
+  background-color: rgb(182 255 11);
+  color: #000;
+}
+
+.p1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  word-spacing: 15px;
+  width: 40rem;
+
+}
+
+
+/* Footer section */
+.footer {
+  margin-top: 106px;
+  height: 90px;
+  width: 100%;
+  background-color: rgb(182 255 11);
+
+
+}
+
+#footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3px;
+  position: relative;
+  top: 5px;
+  margin-bottom: 1%;
+
+}
+
+
+#gallery {
+  margin: 1rem;
+
+}
+
+.slideshow-container{
+  display: none;
+}
+
+@media(min-width:360px) and (max-width:850px)
+{
+
+  body{
+    background-image: none;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    overflow-y: none;
+    overflow-x: none;
+  }
+  nav{
+    display: flex;
+    margin-bottom: -2rem;
+}
+#navlogo{
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    margin-top: 22px;
+}
+#anchor{
+    margin-left: 5%;
+}
+#anchor a{
+    display: none;
+}
+#button{
+    display: none;
+}
+
+#div1 i{
+  display: flex;
+  position: absolute;
+  left: 20rem;
+  top: 1rem;
+}
+#div2{
+margin-top: 1rem;
+}
+#div2 a{
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  position: relative;
+  right: -6rem;
+  top: -0.6rem;
+  margin-top: 1rem;
+}
+
+/*-------------------------------------------- slider css--------------------------  */
+
+.slideshow-container{
+  display: block;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.mySlides img{
+filter: brightness(0.6);
+}
+
+.text h2{
+  font-weight: 0;
+  padding: 10px;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+  .text {font-size: 11px}
+
+#h2{
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.p1{
+  font-size: 2rem;
+  letter-spacing: -2px;
+  width: 22rem;
+}
+
+.article{
+  margin-top: 0.7rem;
+}
+
+.button a button{
+  border: 3px solid rgb(182 255 11);
+  color: rgb(182 255 11);
+  background-color: transparent;
+  height: 50px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.button{
+  padding:1rem 0rem;
+}
+a #b1{
+  width: 7rem;
+}
+a #b2{
+  width: 7rem;
+}
+
+.footer {
+  position: relative;
+  bottom: 5rem;
+  height: 80px;
+}
+.footer-content{
+  margin-top: 5px;
+}
+
+}
